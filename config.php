@@ -6,6 +6,7 @@ define('SALT', 'alk tkrjgodm nmh preaz'); //рандомная строка
 
 function getPassword($password)
 {
+	echo md5($password.SALT);
 	return md5($password.SALT);
 }
 

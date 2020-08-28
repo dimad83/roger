@@ -13,7 +13,7 @@
 		<p>Пароль: <input type="password" name="password" /></p>
 		<p>Запомнить меня: <input type="checkbox" name="remember" /></p>
 		<?php if(!empty($message)) {
-			echo "<p style='color: red'>$message></p>";
+			echo "<p style='color: red'>$message</p>";
 		} ?>
 		<p><input type="submit" value="Вход" /></p>
 	</form>
