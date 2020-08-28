@@ -12,9 +12,9 @@ function getPassword($password)
 
 $users = [
 	//пароль = getPassword('gloriann')
-	'login1' => array('password' => '7e19673511ddbce827bb7e142d98e6d0', 'name' => 'gloriann'),
+	'gloriann' => array('password' => '7e19673511ddbce827bb7e142d98e6d0', 'name' => 'Gloriann'),
 	//пароль = getPassword('test')
-	'login2' => array('password' => '789532c82a3f1a183832741318850c95', 'name' => 'test'),
+	'test' => array('password' => '789532c82a3f1a183832741318850c95', 'name' => 'Great tester'),
 ];
 
 if(!isset($_SESSION['user']) && isset($_COOKIE['login']) && isset($_COOKIE['password'])
