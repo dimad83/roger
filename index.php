@@ -1,17 +1,15 @@
 <?php include_once 'config.php'; ?>
 <html>
 <head>
-	<title>Пример авторизации на сайте</title>
+	<title>My site</title>
 </head>
 <body>
 
-<?php if(AUTH) { //Если мы авторизированы ?>
-
-	Привет, <?php echo $user['name']; ?>!
-	<a href="login.php?logout">Выход</a>
-
-<?php } else { //Если мы не авторизированы  ?>
-
+<?php if(AUTH) {
+	echo "Привет, {$user['name']}! <a href='login.php?logout'>Выход</a>";
+} else {
+	echo $_SESSION['message'] ? "<span style='color: red'>{$_SESSION['message']}</span><br>" : "";
+	?>
 	<form action="login.php" method="post">
 		<p>Имя пользователя: <input type="text" name="login" /></p>
 		<p>Пароль: <input type="password" name="password" /></p>
@@ -21,7 +19,6 @@
 		<?php } ?>
 		<p><input type="submit" value="Вход" /></p>
 	</form>
-
 <?php } ?>
 
 </body>
