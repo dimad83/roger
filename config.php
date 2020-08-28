@@ -10,10 +10,10 @@ function getPassword($password)
 }
 
 $users = [
-	//пароль = getPassword('password1')
-	'login1' => array('password' => '4b0e292e27ee63a490a5214e225999b0', 'name' => 'Имя пользователя'),
-	//пароль = getPassword('password2')
-	'login2' => array('password' => 'cf4578943c7db66051404d5c2b535c7f', 'name' => 'Имя пользователя 2'),
+	//пароль = getPassword('gloriann')
+	'login1' => array('password' => '7e19673511ddbce827bb7e142d98e6d0', 'name' => 'gloriann'),
+	//пароль = getPassword('test')
+	'login2' => array('password' => '789532c82a3f1a183832741318850c95', 'name' => 'test'),
 ];
 
 if(!isset($_SESSION['user']) && isset($_COOKIE['login']) && isset($_COOKIE['password'])
